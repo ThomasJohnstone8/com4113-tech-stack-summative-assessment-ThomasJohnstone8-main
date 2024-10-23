@@ -84,6 +84,36 @@ legend{
 
 /* End extract */
 
+.product-blocks {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bubble {
+    background-color: #afafaf;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.bubble:hover {
+    transform: scale(1.05);
+}
+
+.bubble img {
+
+    width: 300px;
+    height: 500px;
+}
+
 
 html,body{
     font-family:Verdana,sans-serif;
