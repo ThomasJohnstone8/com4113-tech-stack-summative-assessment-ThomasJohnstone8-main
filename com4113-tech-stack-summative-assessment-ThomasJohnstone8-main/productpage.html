@@ -26,6 +26,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="contactus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
     <a href="findus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find Us</a>
     <a href="collabpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Collaberation</a>
+    <a href="login.html" class="login-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log In</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -41,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Header -->
 <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Product Page</h1>
-  <button href="#" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">EXCLUSIVE DEAL HERE</button>
+  <input class="searchbar" type="text" placeholder="Search..."><button href="#" class="searchbutton w3-black w3-button">Search</button>
 </header>
 
 <!-- First Grid -->
@@ -51,50 +52,56 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="bubble">
           <img src="product1.jpg" alt="Product 1">
           <h3>Life.AI</h3>
-          <p><button>$79.99</button></p>
-          
+          <p><button>£79.99</button></p>
       </div>
       <div class="bubble">
           <img src="product2.jpg" alt="Product 2">
-          <h3>Gurgle.AI</h3>
-          <p><button>$99.99</button></p>
+          <h3>Google.AI</h3>
+          <p><button>£99.99</button></p>
       </div>
       <div class="bubble">
           <img src="product3.jpg" alt="Product 3">
           <h3>RobotAI</h3>
-          <p><button>$129.99</button></p>
+          <p><button>£129.99</button></p>
       </div>
       <div class="bubble">
           <img src="product4.png" alt="Product 4">
             <h3>ChatGPT</h3>
-            <p><button>$59.99</button></p>
+            <p><button>£59.99</button></p>
       </div>
       <div class="bubble">
           <img src="product5.jpg" alt="Product 5">
           <h3>Security AI Tool</h3>
-          <p><button>$79.99</button></p>
+          <p><button>£79.99</button></p>
       </div>
       <div class="bubble">
           <img src="product6.jpg" alt="Product 6">
-          <h3>Product 6</h3>
-          <p><button>$79.99</button></p>
+          <h3>Networking AI</h3>
+          <p><button>£99.99</button></p>
       </div>
     </div>
   </div>
 </div>
 
+<!-- like and dislike text (cant get it in the boxes (ask))-->
+<p>Dislikes <span class="clickCount">0</span></p>
+<button class="clickButton"><img src="thumbsup.png" width="20px" height="20px"></button>
+<p>Dislikes <span class="clickCount">0</span></p>
+<button class="clickButton"><img src="thumbsdown.png" width="20px" height="20px"></button>
+
+
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-large w3-center w3-opacity">  
+<footer class="w3-container w3-padding-large w3-center w3-grey w3-opacity">
   <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/leedstrinity/?locale=en_GB" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/leedstrinity/?hl=en" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://uk.pinterest.com/leedstrinity/" class="fa fa-pinterest-p w3-hover-opacity"></a>
+    <a href="https://x.com/LeedsTrinity" class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/school/leeds-trinity-university/posts/?feedView=all" class="fa fa-linkedin w3-hover-opacity"></a>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<p><a href="#" target="_blank">Terms and Conditions</a></p>
+<p><a href="#" target="_blank">Privacy Policy</a></p>
 </footer>
 
 <script>
@@ -107,6 +114,20 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+// Used to make the like and dislike buttons count 
+const buttons = document.querySelectorAll('.clickButton');
+
+buttons.forEach(button => {
+    let clickCount = 0;
+    
+    button.addEventListener('click', function() {
+        clickCount++;
+        const countDisplay = button.previousElementSibling.querySelector('.clickCount');
+        countDisplay.textContent = clickCount;
+    });
+});
+
 </script>
 
 </body>
