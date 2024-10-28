@@ -78,13 +78,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
           <img src="product6.jpg" alt="Product 6">
           <h3>Networking AI</h3>
           <p><button>£99.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 5vw; height: 5vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 5vw; height: 5vh;"></button>
       </div>
     </div>
   </div>
 </div>
 
 <!-- like and dislike text (cant get it in the boxes (ask))-->
-<p>Dislikes <span class="clickCount">0</span></p>
+<p>Likes <span class="clickCount">0</span></p>
 <button class="clickButton"><img src="thumbsup.png" width="20px" height="20px"></button>
 <p>Dislikes <span class="clickCount">0</span></p>
 <button class="clickButton"><img src="thumbsdown.png" width="20px" height="20px"></button>
@@ -125,8 +129,12 @@ buttons.forEach(button => {
         clickCount++;
         const countDisplay = button.previousElementSibling.querySelector('.clickCount');
         countDisplay.textContent = clickCount;
-    });
-});
+    }
+  );
+  }
+);
+
+
 
 </script>
 

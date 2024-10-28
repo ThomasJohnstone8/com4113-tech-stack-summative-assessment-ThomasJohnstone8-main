@@ -104,8 +104,6 @@ float: right;
 
 .bubble {
     background-color: #afafaf;
-    width: 300px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
