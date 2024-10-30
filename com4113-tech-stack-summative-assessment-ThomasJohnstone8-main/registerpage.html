@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -28,7 +26,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="contactus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
     <a href="findus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find Us</a>
     <a href="collabpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Collaberation</a>
-    <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-white">Log In</a>
+    <a href="login.html" class="login-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log In</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -44,37 +42,53 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Log In</h1>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-</header>
+    <h1 class="w3-margin w3-jumbo">Register</h1>
+  </header>
 
-<!-- First Grid -->
+
 <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="wrapper center_box">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-            <input type="text" placeholder="Username" required>
-            <i class='bx bxs-user'></i>
-            </div>
-            <div class="input-box">
-            <input type="password" placeholder="Password" required>
-            <i class='bx bxs-lock-alt' ></i>
-            </div>
-            <div class="remember-forgot">
-            <label><input type="checkbox">Remember Me</label>
-            <a href="#">Forgot Password</a>
-            </div>
-            <button type="submit" class="btn w3-button">Login</button>
-            <div class="register-link">
-            <p>Dont have an account? <a href="registerpage.html">Register</a></p>
-            </div>
-        </form>
+    <div class="w3-content">
+        <div class="wrapper center_box">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <label for="firstname">Firstname<font color="#ff0033">*</font></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+                </div>
+                <div class="input-box">
+                    <label for="surname">Surname<font color="#ff0033">*</font></label>
+                    <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email<font color="#ff0033">*</font></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone">
+                </div>
+                <div class="input-box">
+                  <label for="phone">Interests<font color="#ff0033">*</font></label>
+                  <input type="text" id="interests" name="interests" placeholder="List your interests..."></input>
+              </div>
+              <div class="upload-container w3-padding-32">
+                <label for="imagePreview">Upload a Image</label>
+                <input type="file" id="fileInput" accept="image/*"/>
+                <div id="previewContainer" class="preview-container">
+                    <img id="imagePreview" src="#" alt="Image Preview" style="display: none;"/>
+                </div>
+              <div class="w3-padding-32">
+                <button type="submit" class="btn w3-button ">Register</button>
+              </div>  
+            </form>
+        </div>
     </div>
 </div>
 
-<p> this is a test<font color="#ff0033">*</font></p>
 
+<div class="input-box-big">
+  <label for="interests">Interests<font color="#ff0033">*</font></label>
+  <textarea id="interests" name="interests" rows="" placeholder="List your interests..."></textarea>
 
 
 
@@ -91,8 +105,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <p><a href="#" target="_blank">Privacy Policy</a></p>
   </footer>
   
-
-  <script>
+<script>
 
   // Used to toggle the menu on small screens when clicking on the menu button
   function myFunction() {
@@ -104,4 +117,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     }
   }
 
-  </script>
+  document.getElementById('fileInput').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const imagePreview = document.getElementById('imagePreview');
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+        };
+
+        reader.readAsDataURL(file);
+    } else {
+        imagePreview.src = '';
+        imagePreview.style.display = 'none';
+    }
+}
+);
+
+
+</script>
