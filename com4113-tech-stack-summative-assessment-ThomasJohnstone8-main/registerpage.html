@@ -47,7 +47,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
         <div class="wrapper center_box">
             <h2>Register</h2>
             <form action="#">
@@ -86,12 +85,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 
-<div class="input-box-big">
-  <label for="interests">Interests<font color="#ff0033">*</font></label>
-  <textarea id="interests" name="interests" rows="" placeholder="List your interests..."></textarea>
-
-
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-large w3-center w3-grey w3-opacity">
     <div class="w3-xlarge w3-padding-32">
@@ -117,6 +110,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     }
   }
 
+  // allows the image selected in register page to display a preview of it.
   document.getElementById('fileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
     const imagePreview = document.getElementById('imagePreview');
