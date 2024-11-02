@@ -84,6 +84,17 @@ legend{
 
 /* End extract */
 
+.wrapper-collab{
+    width: 1200px;
+    margin: auto;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    backdrop-filter: blur(9px);
+    color: #000000;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+
 .wrapper{
     width: 600px;
     margin: auto;
@@ -113,7 +124,7 @@ legend{
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 60px;
     font-size: 16px;
-    color: #000000;
+    color: #808080;
     padding: 20px 45px 20px 20px;
   }
 

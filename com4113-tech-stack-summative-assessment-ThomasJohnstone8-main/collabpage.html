@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>IntelliTech</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
@@ -16,10 +16,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-<!-- Users can post resources (links to tutorials, articles, or GitHub repositories).
-o Each post should include a title, description, category, and link.-->
-
-
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
@@ -28,7 +24,6 @@ o Each post should include a title, description, category, and link.-->
     <a href="productpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Product Page</a>
     <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
     <a href="contactus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
-    <a href="findus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find Us</a>
     <a href="collabpage.html" class="w3-bar-item w3-button w3-padding-large w3-white">Collaberation</a>
     <a href="login.html" class="login-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log In</a>
   </div>
@@ -38,7 +33,6 @@ o Each post should include a title, description, category, and link.-->
     <a href="productpage.html" class="w3-bar-item w3-button w3-padding-large">Product Page</a>
     <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
     <a href="contactus.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
-    <a href="findus.html" class="w3-bar-item w3-button w3-padding-large">Find Us</a>
     <a href="collabpage.html" class="w3-bar-item w3-button w3-padding-large">Collaberation</a>
     <a href="login.html" class="w3-bar-item w3-button w3-padding-large">Log In</a>
   </div>
@@ -49,13 +43,42 @@ o Each post should include a title, description, category, and link.-->
     <h1 class="w3-margin w3-jumbo">Collaberation</h1>
   </header>
 
+<!-- input form for collaberation -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="wrapper-collab center_box">
+        <h2>Make Post</h2>
+        <form action="#">
+            <div class="input-box w3-padding-16">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Title" required>
+            </div>
+            <div class="input-box w3-padding-16">
+                <label for="email">Link</label>
+                <input type="text" id="link" name="link" placeholder="Link" required>
+            </div>
+            <div class="input-box w3-padding-16">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Description...">
+            </div>
+            <div class="input-box w3-padding-16">
+              <label for="tags">Tags/Category (seperate by comma)</label>
+              <input type="text" id="tags" name="tags" placeholder="Tags"></input>
+            </div>
+          <div class="w3-padding-32">
+            <button type="submit" class="btn w3-button">Previous Posts</button>
+          </div>  
+        </form>
+    </div>
+</div>
+</div>
 
 
-
-
-
-
-
+<!-- previous posts (link to db in future) -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="wrapper-collab center_box">
+    <h2>Make Post</h2>
+  </div>
+</div>
 
 
   <!-- Footer -->
