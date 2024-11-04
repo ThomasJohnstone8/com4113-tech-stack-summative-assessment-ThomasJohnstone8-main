@@ -6,6 +6,10 @@ In this project I have decided to use various programming tools to reach the des
 
 There are various other tech stack I could use
 
+compare
+
+week 4 s1 comapore
+
 # Version Control
 
 access and give link to the github assignment here and a short mention of the details of the project
@@ -44,6 +48,10 @@ When it comes to website many legal and ethical considerations must be identifie
 # Risk assessment
 
 add evidence 
+
+fake account be careful
+
+ask AI 
 
 # Future considerations
 
