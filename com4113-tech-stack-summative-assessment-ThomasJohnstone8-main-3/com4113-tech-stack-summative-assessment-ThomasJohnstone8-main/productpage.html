@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IntelliTech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="mainpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="productpage.html" class="w3-bar-item w3-button w3-padding-large w3-white">Product Page</a>
+    <a href="aboutus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    <a href="contactus.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+    <a href="collabpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Collaberation</a>
+    <a href="login.html" class="login-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log In</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="productpage.html" class="w3-bar-item w3-button w3-padding-large">Product Page</a>
+    <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="contactus.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+    <a href="collabpage.html" class="w3-bar-item w3-button w3-padding-large">Collaberation</a>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding-large">Log In</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Product Page</h1>
+  <input class="searchbar" type="text" placeholder="Search..."><button href="#" class="searchbutton w3-black w3-button">Search</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="product-blocks">
+      <!-- Each bubble contains a product and its information -->
+      <div class="bubble">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Life.AI</h3>
+          <p><button>£79.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+      <div class="bubble">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Google.AI</h3>
+          <p><button>£99.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+      <div class="bubble">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>RobotAI</h3>
+          <p><button>£129.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+      <div class="bubble">
+          <img src="product4.png" alt="Product 4">
+            <h3>ChatGPT</h3>
+            <p><button>£59.99</button></p>
+            <p>Likes <span class="clickCount">0</span></p>
+            <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+            <p>Dislikes <span class="clickCount">0</span></p>
+            <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+      <div class="bubble">
+          <img src="product5.jpg" alt="Product 5">
+          <h3>Security AI Tool</h3>
+          <p><button>£79.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+      <div class="bubble">
+          <img src="product6.jpg" alt="Product 6">
+          <h3>Networking AI</h3>
+          <p><button>£99.99</button></p>
+          <p>Likes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsup.png" style="width: 2vw; height: 4vh;"></button>
+          <p>Dislikes <span class="clickCount">0</span></p>
+          <button class="clickButton"><img src="thumbsdown.png" style="width: 2vw; height: 4vh;"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-large w3-center w3-grey w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/leedstrinity/?locale=en_GB" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/leedstrinity/?hl=en" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://uk.pinterest.com/leedstrinity/" class="fa fa-pinterest-p w3-hover-opacity"></a>
+    <a href="https://x.com/LeedsTrinity" class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/school/leeds-trinity-university/posts/?feedView=all" class="fa fa-linkedin w3-hover-opacity"></a>
+ </div>
+<p><a href="#" target="_blank">Terms and Conditions</a></p>
+<p><a href="#" target="_blank">Privacy Policy</a></p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Used to make the like and dislike buttons count 
+const buttons = document.querySelectorAll('.clickButton');
+
+buttons.forEach(button => {
+    let clickCount = 0;
+    
+    button.addEventListener('click', function() {
+        clickCount++;
+        const countDisplay = button.previousElementSibling.querySelector('.clickCount');
+        countDisplay.textContent = clickCount;
+    }
+  );
+  }
+);
+
+</script>
+
+</body>
+</html>
